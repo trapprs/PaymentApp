@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E06B71282310F7FD002C0E8F /* SelectAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */; };
+		E06B712A2310F8D8002C0E8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B71292310F8D8002C0E8F /* User.swift */; };
+		E06B712E2310FAFE002C0E8F /* SelectAccountInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B712D2310FAFE002C0E8F /* SelectAccountInteractorTests.swift */; };
 		E0E14E162310EE8000B0D068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E14E152310EE8000B0D068 /* AppDelegate.swift */; };
 		E0E14E1D2310EE8500B0D068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E14E1C2310EE8500B0D068 /* Assets.xcassets */; };
 		E0E14E202310EE8500B0D068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E14E1E2310EE8500B0D068 /* LaunchScreen.storyboard */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountInteractor.swift; sourceTree = "<group>"; };
+		E06B71292310F8D8002C0E8F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E06B712D2310FAFE002C0E8F /* SelectAccountInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountInteractorTests.swift; sourceTree = "<group>"; };
 		E0E14E122310EE8000B0D068 /* PaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E14E152310EE8000B0D068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E14E1C2310EE8500B0D068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +64,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E06B71242310F724002C0E8F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E06B71252310F745002C0E8F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E06B71262310F7BB002C0E8F /* SelectAccount */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E06B71262310F7BB002C0E8F /* SelectAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */,
+			);
+			path = SelectAccount;
+			sourceTree = "<group>";
+		};
+		E06B712B2310FAD9002C0E8F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E06B712C2310FAEA002C0E8F /* SelectAccount */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E06B712C2310FAEA002C0E8F /* SelectAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E06B712D2310FAFE002C0E8F /* SelectAccountInteractorTests.swift */,
+			);
+			path = SelectAccount;
+			sourceTree = "<group>";
+		};
 		E0E14E092310EE8000B0D068 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +124,9 @@
 		E0E14E142310EE8000B0D068 /* PaymentApp */ = {
 			isa = PBXGroup;
 			children = (
+				E06B71242310F724002C0E8F /* Service */,
 				E0E14E382310F07E00B0D068 /* Model */,
+				E06B71252310F745002C0E8F /* Scenes */,
 				E0E14E352310EE9800B0D068 /* Support FIles */,
 			);
 			path = PaymentApp;
@@ -88,6 +135,7 @@
 		E0E14E292310EE8500B0D068 /* PaymentAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				E06B712B2310FAD9002C0E8F /* Scenes */,
 				E0E14E3B2310F0BD00B0D068 /* Model */,
 				E0E14E2C2310EE8500B0D068 /* Info.plist */,
 			);
@@ -110,6 +158,7 @@
 			children = (
 				E0E14E362310EF1000B0D068 /* Account.swift */,
 				E0E14E392310F09200B0D068 /* UserAccount.swift */,
+				E06B71292310F8D8002C0E8F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B71282310F7FD002C0E8F /* SelectAccountInteractor.swift in Sources */,
 				E0E14E162310EE8000B0D068 /* AppDelegate.swift in Sources */,
 				E0E14E372310EF1000B0D068 /* Account.swift in Sources */,
+				E06B712A2310F8D8002C0E8F /* User.swift in Sources */,
 				E0E14E3A2310F09200B0D068 /* UserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B712E2310FAFE002C0E8F /* SelectAccountInteractorTests.swift in Sources */,
 				E0E14E3F2310F33200B0D068 /* UserAccountTests.swift in Sources */,
 				E0E14E3D2310F0E200B0D068 /* AccountTests.swift in Sources */,
 			);
