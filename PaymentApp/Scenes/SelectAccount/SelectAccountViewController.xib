@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectAccountViewController" customModule="PaymentApp" customModuleProvider="target">
+            <connections>
+                <outlet property="accountsTableView" destination="usb-O0-t8b" id="V2J-vT-Ac3"/>
+                <outlet property="userAccountTableView" destination="kWY-ki-1ai" id="zTx-hK-X2H"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hhU-EU-Y01"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kWY-ki-1ai">
+                    <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Mye-8Q-JwD"/>
+                    </constraints>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="usb-O0-t8b">
+                    <rect key="frame" x="0.0" y="244" width="414" height="548"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wx1-ER-N0p">
+                    <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="mpA-qZ-bMK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="usb-O0-t8b" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="19U-Cg-3jb"/>
+                <constraint firstItem="usb-O0-t8b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7Wh-lp-K98"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Wx1-ER-N0p" secondAttribute="bottom" id="8js-Q5-iJm"/>
+                <constraint firstItem="kWY-ki-1ai" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="O4H-6M-HEO"/>
+                <constraint firstItem="kWY-ki-1ai" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="RmP-Ub-FXP"/>
+                <constraint firstItem="usb-O0-t8b" firstAttribute="top" secondItem="kWY-ki-1ai" secondAttribute="bottom" id="cu1-td-SI9"/>
+                <constraint firstItem="Wx1-ER-N0p" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="giv-wk-cER"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wx1-ER-N0p" secondAttribute="trailing" id="nbq-6m-yyd"/>
+                <constraint firstItem="kWY-ki-1ai" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sPQ-st-v1E"/>
+                <constraint firstItem="Wx1-ER-N0p" firstAttribute="top" secondItem="usb-O0-t8b" secondAttribute="bottom" id="u5g-fX-cid"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+</document>

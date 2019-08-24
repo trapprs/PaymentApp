@@ -9,8 +9,8 @@
 import Foundation
 
 protocol SelectAccountInteractorProtocol {
-    func getAccounts() -> [Account]
-    func getUserInformations() -> User?
+    func getAccounts()
+    func getUserInformations()
 }
 
 protocol AccountServiceAccess {
@@ -19,36 +19,37 @@ protocol AccountServiceAccess {
 }
 
 class SelectAccountInteractor: SelectAccountInteractorProtocol {
-    var service: AccountServiceAccess?
+    private var service: AccountServiceAccess?
+    private var presenter: SelectAccountPresenterProtocol?
     
-    init(service: AccountServiceAccess) {
+    init(service: AccountServiceAccess, presenter: SelectAccountPresenterProtocol?) {
         self.service = service
+        self.presenter = presenter
     }
     
-    func getAccounts() -> [Account] {
-        var resultAccounts: [Account] = []
-        service?.getAllAcountForPayment(completion: { result in
+    func getAccounts() {
+        service?.getAllAcountForPayment(completion: { [weak self] result in
+            guard let self = self else { return }
+            
             switch result {
             case .success(let data):
-                resultAccounts = data
-            case .failure(_):
-                resultAccounts = []
+                self.presenter?.getAccountToShow(accounts: data)
+            case .failure(let error):
+                self.presenter?.getReturnError(error: error)
             }
         })
-        return resultAccounts
     }
     
-    func getUserInformations() -> User? {
-        var user: User? = nil
-        service?.getUserInformations(completion: { result in
+    func getUserInformations() {
+        service?.getUserInformations(completion: { [weak self] result in
+            guard let self = self else { return }
+            
             switch result {
-                
             case .success(let data):
-                user = data
-            case .failure(_):
-                break
+                self.presenter?.getUserInformation(user: data)
+            case .failure(let error):
+                self.presenter?.getReturnError(error: error)
             }
         })
-        return user
     }
 }

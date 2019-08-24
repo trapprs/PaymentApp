@@ -16,18 +16,18 @@ class SelectAccountInteractorTests: XCTestCase {
         super.setUp()
         
         service = AccountServiceSpy()
-        selectAccount = SelectAccountInteractor(service: service)
+        selectAccount = SelectAccountInteractor(service: service, presenter: nil)
     }
 
     func testGetAccounts() {
-        let accounts = selectAccount.getAccounts()
+        selectAccount.getAccounts()
         
-        XCTAssert(accounts.count == service.accounts?.count)
+        XCTAssert(service.accounts?.count == 2)
     }
     
     func testGetUserInformation() {
-        let user = selectAccount.getUserInformations()
-        XCTAssert(user?.name == service.user?.name)
+        selectAccount.getUserInformations()
+        XCTAssert(service.user?.name == "Test")
     }
     
     override func tearDown() {

@@ -11,5 +11,5 @@ import Foundation
 struct UserAccount: Codable {
     var id: Int
     var balance: Int
-    var accounts: [Account]?
+    var account: Account?
 }

@@ -10,6 +10,11 @@
 		E06B71282310F7FD002C0E8F /* SelectAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */; };
 		E06B712A2310F8D8002C0E8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B71292310F8D8002C0E8F /* User.swift */; };
 		E06B712E2310FAFE002C0E8F /* SelectAccountInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B712D2310FAFE002C0E8F /* SelectAccountInteractorTests.swift */; };
+		E06B713223119398002C0E8F /* SelectAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B713123119397002C0E8F /* SelectAccountPresenter.swift */; };
+		E06B713423119807002C0E8F /* SelectAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B713323119807002C0E8F /* SelectAccountViewController.swift */; };
+		E06B713623119BAA002C0E8F /* SelectAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B713523119BAA002C0E8F /* SelectAccountRouter.swift */; };
+		E06B713823119C3E002C0E8F /* AccountServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B713723119C3E002C0E8F /* AccountServiceMock.swift */; };
+		E06B713A2311A406002C0E8F /* SelectAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06B71392311A406002C0E8F /* SelectAccountViewController.xib */; };
 		E0E14E162310EE8000B0D068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E14E152310EE8000B0D068 /* AppDelegate.swift */; };
 		E0E14E1D2310EE8500B0D068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E14E1C2310EE8500B0D068 /* Assets.xcassets */; };
 		E0E14E202310EE8500B0D068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E14E1E2310EE8500B0D068 /* LaunchScreen.storyboard */; };
@@ -33,6 +38,11 @@
 		E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountInteractor.swift; sourceTree = "<group>"; };
 		E06B71292310F8D8002C0E8F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E06B712D2310FAFE002C0E8F /* SelectAccountInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountInteractorTests.swift; sourceTree = "<group>"; };
+		E06B713123119397002C0E8F /* SelectAccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccountPresenter.swift; sourceTree = "<group>"; };
+		E06B713323119807002C0E8F /* SelectAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountViewController.swift; sourceTree = "<group>"; };
+		E06B713523119BAA002C0E8F /* SelectAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAccountRouter.swift; sourceTree = "<group>"; };
+		E06B713723119C3E002C0E8F /* AccountServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServiceMock.swift; sourceTree = "<group>"; };
+		E06B71392311A406002C0E8F /* SelectAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectAccountViewController.xib; sourceTree = "<group>"; };
 		E0E14E122310EE8000B0D068 /* PaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E14E152310EE8000B0D068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E14E1C2310EE8500B0D068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +92,12 @@
 		E06B71262310F7BB002C0E8F /* SelectAccount */ = {
 			isa = PBXGroup;
 			children = (
+				E06B713123119397002C0E8F /* SelectAccountPresenter.swift */,
 				E06B71272310F7FD002C0E8F /* SelectAccountInteractor.swift */,
+				E06B713323119807002C0E8F /* SelectAccountViewController.swift */,
+				E06B713523119BAA002C0E8F /* SelectAccountRouter.swift */,
+				E06B713723119C3E002C0E8F /* AccountServiceMock.swift */,
+				E06B71392311A406002C0E8F /* SelectAccountViewController.xib */,
 			);
 			path = SelectAccount;
 			sourceTree = "<group>";
@@ -254,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B713A2311A406002C0E8F /* SelectAccountViewController.xib in Resources */,
 				E0E14E202310EE8500B0D068 /* LaunchScreen.storyboard in Resources */,
 				E0E14E1D2310EE8500B0D068 /* Assets.xcassets in Resources */,
 			);
@@ -273,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B713223119398002C0E8F /* SelectAccountPresenter.swift in Sources */,
 				E06B71282310F7FD002C0E8F /* SelectAccountInteractor.swift in Sources */,
+				E06B713623119BAA002C0E8F /* SelectAccountRouter.swift in Sources */,
+				E06B713423119807002C0E8F /* SelectAccountViewController.swift in Sources */,
 				E0E14E162310EE8000B0D068 /* AppDelegate.swift in Sources */,
 				E0E14E372310EF1000B0D068 /* Account.swift in Sources */,
+				E06B713823119C3E002C0E8F /* AccountServiceMock.swift in Sources */,
 				E06B712A2310F8D8002C0E8F /* User.swift in Sources */,
 				E0E14E3A2310F09200B0D068 /* UserAccount.swift in Sources */,
 			);
